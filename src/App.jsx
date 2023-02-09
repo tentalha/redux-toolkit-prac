@@ -8,8 +8,10 @@ const App = () => {
   return (
     <div className="App">
       <Counter />
-      <AddTodo />
-      <AllTodo />
+      <div style={{ marginTop: 10 }}>
+        <AddTodo />
+        <AllTodo />
+      </div>
     </div>
   );
 };
