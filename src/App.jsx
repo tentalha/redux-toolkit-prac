@@ -1,17 +1,16 @@
-import "./App.css";
-import reactLogo from "./assets/react.svg";
-import Counter from "./features/counter/Counter";
-import AddTodo from "./features/todos/AddTodo";
-import AllTodo from "./features/todos/AllTodo";
+import { Route, Routes } from "react-router-dom";
+import Navabr from "./Components/Navabr";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div className="App">
-      <Counter />
-      <div style={{ marginTop: 10 }}>
-        <AddTodo />
-        <AllTodo />
-      </div>
+      <Navabr />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </div>
   );
 };
