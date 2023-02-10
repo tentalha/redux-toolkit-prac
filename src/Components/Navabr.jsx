@@ -9,6 +9,9 @@ const Navabr = () => {
       <ul>
         <Link to={`about`}>About</Link>
       </ul>
+      <ul>
+        <Link to={`rockets`}>Rocket</Link>
+      </ul>
     </div>
   );
 };
