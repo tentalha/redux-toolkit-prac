@@ -12,6 +12,9 @@ const Navabr = () => {
       <ul>
         <Link to={`rockets`}>Rocket</Link>
       </ul>
+      <ul>
+        <Link to={`search`}>Search</Link>
+      </ul>
     </div>
   );
 };
