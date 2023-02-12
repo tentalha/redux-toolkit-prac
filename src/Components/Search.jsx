@@ -5,19 +5,20 @@ export const Search = () => {
   const todos = useSelector((state) => state.todo.todo);
   const [input, setInput] = useState("");
 
-  const handleOnChange = (e) => {
-    setInput(e.target.value);
-  };
-
   const newList = () => {
-    return todos.filter((item) =>
+    const _list = todos.filter((item) =>
       item.title.toLowerCase().includes(input.toLowerCase())
     );
+    return _list;
   };
 
   return (
     <>
-      <input type="text" value={input} onChange={handleOnChange} />
+      <input
+        type="text"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+      />
       {newList().map((item, index) => (
         <li key={index}>{item?.title}</li>
       ))}
