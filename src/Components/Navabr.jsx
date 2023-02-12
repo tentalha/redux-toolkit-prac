@@ -7,13 +7,13 @@ const Navabr = () => {
         <Link to={`/`}>Home</Link>
       </ul>
       <ul>
-        <Link to={`about`}>About</Link>
+        <Link to={`/about`}>About</Link>
       </ul>
       <ul>
-        <Link to={`rockets`}>Rocket</Link>
+        <Link to={`/rockets`}>Rocket</Link>
       </ul>
       <ul>
-        <Link to={`search`}>Search</Link>
+        <Link to={`/search`}>Search</Link>
       </ul>
     </div>
   );

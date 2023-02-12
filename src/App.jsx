@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Navabr from "./Components/Navabr";
+import Layout from "./Components/HOCs/Layout";
 import { Search } from "./Components/Search";
 import Rocket from "./features/rockets/Rocket";
 import About from "./pages/About";
@@ -8,12 +8,39 @@ import Home from "./pages/Home";
 const App = () => {
   return (
     <div className="App">
-      <Navabr />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="rockets" element={<Rocket />} />
-        <Route path="search" element={<Search />} />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Home />
+            </Layout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <About />
+            </Layout>
+          }
+        />
+        <Route
+          path="/rockets"
+          element={
+            <Layout>
+              <Rocket />
+            </Layout>
+          }
+        />
+        <Route
+          path="/search"
+          element={
+            <Layout>
+              <Search />
+            </Layout>
+          }
+        />
       </Routes>
     </div>
   );
