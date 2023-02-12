@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import Layout from "./HOCs/Layout";
 
-export const Search = () => {
+const Search = () => {
   const todos = useSelector((state) => state.todo.todo);
   const [input, setInput] = useState("");
 
@@ -25,3 +26,5 @@ export const Search = () => {
     </>
   );
 };
+
+export default Search;

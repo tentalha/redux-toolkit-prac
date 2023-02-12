@@ -1,6 +1,7 @@
 import Counter from "../features/counter/Counter";
 import AddTodo from "../features/todos/AddTodo";
 import AllTodo from "../features/todos/AllTodo";
+import { useGetData } from "../hooks/useGetData";
 
 const Home = () => {
   return (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Navabr = () => {
+const Navbar = () => {
   return (
     <div>
       <ul>
@@ -15,8 +15,11 @@ const Navabr = () => {
       <ul>
         <Link to={`/search`}>Search</Link>
       </ul>
+      <ul>
+        <Link to={`/custom`}>Custom</Link>
+      </ul>
     </div>
   );
 };
 
-export default Navabr;
+export default Navbar;

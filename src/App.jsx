@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Components/HOCs/Layout";
-import { Search } from "./Components/Search";
+import Search from "./Components/Search";
 import Rocket from "./features/rockets/Rocket";
 import About from "./pages/About";
+import CustomHookTest from "./pages/CustomHookTest";
 import Home from "./pages/Home";
 
 const App = () => {
@@ -38,6 +39,14 @@ const App = () => {
           element={
             <Layout>
               <Search />
+            </Layout>
+          }
+        />
+        <Route
+          path="/custom"
+          element={
+            <Layout>
+              <CustomHookTest />
             </Layout>
           }
         />
